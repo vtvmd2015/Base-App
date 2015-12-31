@@ -30,6 +30,12 @@
 			<tbody>	
 		
 					<tr>
+						<td width='30%' class='label-view text-right'>Employee Number</td>
+						<td>{{ $row->employee_number }} </td>
+						
+					</tr>
+				
+					<tr>
 						<td width='30%' class='label-view text-right'>First Name</td>
 						<td>{{ $row->first_name }} </td>
 						
@@ -116,6 +122,54 @@
 					<tr>
 						<td width='30%' class='label-view text-right'>State</td>
 						<td>{{ $row->state }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Date Of Joining</td>
+						<td>{{ $row->date_of_joining }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Pf No</td>
+						<td>{{ $row->pf_no }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Pan No</td>
+						<td>{{ $row->pan_no }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Date Of Releiving</td>
+						<td>{{ $row->date_of_releiving }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Bank Name</td>
+						<td>{{ $row->bank_name }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Bank Branch</td>
+						<td>{{ $row->bank_branch }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Bank Ifsc Code</td>
+						<td>{{ $row->bank_ifsc_code }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Bank Acc No</td>
+						<td>{{ $row->bank_acc_no }} </td>
 						
 					</tr>
 				

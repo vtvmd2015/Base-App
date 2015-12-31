@@ -36,6 +36,12 @@
 					</tr>
 				
 					<tr>
+						<td width='30%' class='label-view text-right'>Supplier Number</td>
+						<td>{{ $row->supplier_number }} </td>
+						
+					</tr>
+				
+					<tr>
 						<td width='30%' class='label-view text-right'>Supplier Type</td>
 						<td>{!! SiteHelpers::gridDisplayView($row->supplier_type_id,'supplier_type_id','1:supplier_type_t:supplier_type_id:supplier_type') !!} </td>
 						
@@ -90,20 +96,62 @@
 					</tr>
 				
 					<tr>
-						<td width='30%' class='label-view text-right'>Supplier Taxid</td>
-						<td>{{ $row->supplier_taxid }} </td>
-						
-					</tr>
-				
-					<tr>
 						<td width='30%' class='label-view text-right'>Payment Method</td>
 						<td>{{ $row->payment_method }} </td>
 						
 					</tr>
 				
 					<tr>
+						<td width='30%' class='label-view text-right'>Supplier Status</td>
+						<td>{{ $row->supplier_status }} </td>
+						
+					</tr>
+				
+					<tr>
 						<td width='30%' class='label-view text-right'>Payment Terms</td>
 						<td>{{ $row->payment_terms }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>TIN NO</td>
+						<td>{{ $row->TIN_NO }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>PAN NO</td>
+						<td>{{ $row->PAN_NO }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>SERVICE TAXREG NO</td>
+						<td>{{ $row->SERVICE_TAXREG_NO }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>EXCISE DUTY NO</td>
+						<td>{{ $row->EXCISE_DUTY NO }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>CREDIT PERIOD</td>
+						<td>{{ $row->CREDIT_PERIOD }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Default Pricelist Id</td>
+						<td>{{ $row->default_pricelist_id }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Validation Status</td>
+						<td>{{ $row->validation_status }} </td>
 						
 					</tr>
 				

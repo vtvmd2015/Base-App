@@ -41,6 +41,15 @@
 									 </div>
 								  </div> 					
 								  <div class="form-group  " >
+									<label for="Supplier Number" class=" control-label col-md-4 text-left"> Supplier Number </label>
+									<div class="col-md-6">
+									  {!! Form::text('supplier_number', $row['supplier_number'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
 									<label for="Supplier Name" class=" control-label col-md-4 text-left"> Supplier Name </label>
 									<div class="col-md-6">
 									  {!! Form::text('supplier_name', $row['supplier_name'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
@@ -118,9 +127,64 @@
 						<fieldset><legend> Additonal</legend>
 									
 								  <div class="form-group  " >
-									<label for="Supplier Taxid" class=" control-label col-md-4 text-left"> Supplier Taxid </label>
+									<label for="Supplier Status" class=" control-label col-md-4 text-left"> Supplier Status </label>
 									<div class="col-md-6">
-									  {!! Form::text('supplier_taxid', $row['supplier_taxid'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									  
+					<?php $supplier_status = explode(',',$row['supplier_status']);
+					$supplier_status_opt = array( 'A' => 'Active' ,  'I' => 'Inactive' , ); ?>
+					<select name='supplier_status' rows='5'   class='select2 '  > 
+						<?php 
+						foreach($supplier_status_opt as $key=>$val)
+						{
+							echo "<option  value ='$key' ".($row['supplier_status'] == $key ? " selected='selected' " : '' ).">$val</option>"; 						
+						}						
+						?></select> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="TIN NO" class=" control-label col-md-4 text-left"> TIN NO </label>
+									<div class="col-md-6">
+									  {!! Form::text('TIN_NO', $row['TIN_NO'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="PAN NO" class=" control-label col-md-4 text-left"> PAN NO </label>
+									<div class="col-md-6">
+									  {!! Form::text('PAN_NO', $row['PAN_NO'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="SERVICE TAXREG NO" class=" control-label col-md-4 text-left"> SERVICE TAXREG NO </label>
+									<div class="col-md-6">
+									  {!! Form::text('SERVICE_TAXREG_NO', $row['SERVICE_TAXREG_NO'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="EXCISE DUTY NO" class=" control-label col-md-4 text-left"> EXCISE DUTY NO </label>
+									<div class="col-md-6">
+									  <textarea name='EXCISE_DUTY NO' rows='5' id='EXCISE_DUTY NO' class='form-control '  
+				           >{{ $row['EXCISE_DUTY NO'] }}</textarea> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="CREDIT PERIOD" class=" control-label col-md-4 text-left"> CREDIT PERIOD </label>
+									<div class="col-md-6">
+									  {!! Form::text('CREDIT_PERIOD', $row['CREDIT_PERIOD'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
 									 </div> 
 									 <div class="col-md-2">
 									 	
@@ -149,6 +213,24 @@
 			<div class="col-md-4">
 						<fieldset><legend> .</legend>
 									
+								  <div class="form-group  " >
+									<label for="Default Pricelist Id" class=" control-label col-md-4 text-left"> Default Pricelist Id </label>
+									<div class="col-md-6">
+									  {!! Form::text('default_pricelist_id', $row['default_pricelist_id'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Validation Status" class=" control-label col-md-4 text-left"> Validation Status </label>
+									<div class="col-md-6">
+									  {!! Form::text('validation_status', $row['validation_status'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
 								  <div class="form-group  " >
 									<label for="Contact Email" class=" control-label col-md-4 text-left"> Contact Email </label>
 									<div class="col-md-6">

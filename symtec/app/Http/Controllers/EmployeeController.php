@@ -145,9 +145,6 @@ class EmployeeController extends Controller {
 			$data = $this->validatePost('tb_employee');
 				
 			$id = $this->model->insertRow($data , $request->input('employee_id'));
-                        //****
-                        $request[$this->data['subgrid']['key']]=10000;
-
 			$this->detailviewsave( $this->modelview , $request->all() , $this->data['subgrid'] , $id) ;
 			if(!is_null($request->input('apply')))
 			{

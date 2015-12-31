@@ -41,6 +41,42 @@
 						
 					</tr>
 				
+					<tr>
+						<td width='30%' class='label-view text-right'>Esi Apply</td>
+						<td>{{ $row->esi_apply }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Esi Percentage</td>
+						<td>{{ $row->esi_percentage }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Pf Apply</td>
+						<td>{{ $row->pf_apply }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Pf Percentage</td>
+						<td>{{ $row->pf_percentage }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Ot Apply</td>
+						<td>{{ $row->ot_apply }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Tds Apply</td>
+						<td>{{ $row->tds_apply }} </td>
+						
+					</tr>
+				
 			</tbody>	
 		</table>   
 

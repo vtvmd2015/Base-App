@@ -41,7 +41,7 @@
 									 </div>
 								  </div> 					
 								  <div class="form-group  " >
-									<label for="Emp Type" class=" control-label col-md-4 text-left"> Emp Type </label>
+									<label for="EmployeeType" class=" control-label col-md-4 text-left"> EmployeeType </label>
 									<div class="col-md-6">
 									  {!! Form::text('emp_type', $row['emp_type'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
 									 </div> 
@@ -53,6 +53,96 @@
 									<label for="Description" class=" control-label col-md-4 text-left"> Description </label>
 									<div class="col-md-6">
 									  {!! Form::text('description', $row['description'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="ESI Apply" class=" control-label col-md-4 text-left"> ESI Apply </label>
+									<div class="col-md-6">
+									  
+					<?php $esi_apply = explode(',',$row['esi_apply']);
+					$esi_apply_opt = array( 'Y' => 'Yes' ,  'N' => 'No' , ); ?>
+					<select name='esi_apply' rows='5'   class='select2 '  > 
+						<?php 
+						foreach($esi_apply_opt as $key=>$val)
+						{
+							echo "<option  value ='$key' ".($row['esi_apply'] == $key ? " selected='selected' " : '' ).">$val</option>"; 						
+						}						
+						?></select> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="ESI Percentage" class=" control-label col-md-4 text-left"> ESI Percentage </label>
+									<div class="col-md-6">
+									  {!! Form::text('esi_percentage', $row['esi_percentage'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="PF Apply" class=" control-label col-md-4 text-left"> PF Apply </label>
+									<div class="col-md-6">
+									  
+					<?php $pf_apply = explode(',',$row['pf_apply']);
+					$pf_apply_opt = array( 'Y' => 'Yes' ,  'N' => 'No' , ); ?>
+					<select name='pf_apply' rows='5'   class='select2 '  > 
+						<?php 
+						foreach($pf_apply_opt as $key=>$val)
+						{
+							echo "<option  value ='$key' ".($row['pf_apply'] == $key ? " selected='selected' " : '' ).">$val</option>"; 						
+						}						
+						?></select> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="PF Percentage" class=" control-label col-md-4 text-left"> PF Percentage </label>
+									<div class="col-md-6">
+									  {!! Form::text('pf_percentage', $row['pf_percentage'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="OT Apply" class=" control-label col-md-4 text-left"> OT Apply </label>
+									<div class="col-md-6">
+									  
+					<?php $ot_apply = explode(',',$row['ot_apply']);
+					$ot_apply_opt = array( 'Y' => 'Yes' ,  'N' => 'No' , ); ?>
+					<select name='ot_apply' rows='5'   class='select2 '  > 
+						<?php 
+						foreach($ot_apply_opt as $key=>$val)
+						{
+							echo "<option  value ='$key' ".($row['ot_apply'] == $key ? " selected='selected' " : '' ).">$val</option>"; 						
+						}						
+						?></select> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="TDS Apply" class=" control-label col-md-4 text-left"> TDS Apply </label>
+									<div class="col-md-6">
+									  
+					<?php $tds_apply = explode(',',$row['tds_apply']);
+					$tds_apply_opt = array( 'Y' => 'Yes' ,  'N' => 'No' , ); ?>
+					<select name='tds_apply' rows='5'   class='select2 '  > 
+						<?php 
+						foreach($tds_apply_opt as $key=>$val)
+						{
+							echo "<option  value ='$key' ".($row['tds_apply'] == $key ? " selected='selected' " : '' ).">$val</option>"; 						
+						}						
+						?></select> 
 									 </div> 
 									 <div class="col-md-2">
 									 	

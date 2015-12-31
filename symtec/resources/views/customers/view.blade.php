@@ -30,14 +30,14 @@
 			<tbody>	
 		
 					<tr>
-						<td width='30%' class='label-view text-right'>Customer Id</td>
-						<td>{{ $row->customer_id }} </td>
+						<td width='30%' class='label-view text-right'>Customer Name</td>
+						<td>{{ $row->customer_name }} </td>
 						
 					</tr>
 				
 					<tr>
-						<td width='30%' class='label-view text-right'>Customer Name</td>
-						<td>{{ $row->customer_name }} </td>
+						<td width='30%' class='label-view text-right'>Customer Number</td>
+						<td>{{ $row->customer_number }} </td>
 						
 					</tr>
 				
@@ -98,6 +98,12 @@
 					<tr>
 						<td width='30%' class='label-view text-right'>Pay Atten</td>
 						<td>{{ $row->pay_atten }} </td>
+						
+					</tr>
+				
+					<tr>
+						<td width='30%' class='label-view text-right'>Billing Limit</td>
+						<td>{{ $row->billing_limit }} </td>
 						
 					</tr>
 				

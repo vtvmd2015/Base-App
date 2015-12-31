@@ -41,6 +41,16 @@
 									 </div>
 								  </div> 					
 								  <div class="form-group  " >
+									<label for="Customer Number" class=" control-label col-md-4 text-left"> Customer Number </label>
+									<div class="col-md-6">
+									  <textarea name='customer_number' rows='5' id='customer_number' class='form-control '  
+				           >{{ $row['customer_number'] }}</textarea> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
 									<label for="Customer Name" class=" control-label col-md-4 text-left"> Customer Name </label>
 									<div class="col-md-6">
 									  {!! Form::text('customer_name', $row['customer_name'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
@@ -127,6 +137,16 @@
 									 </div>
 								  </div> 					
 								  <div class="form-group  " >
+									<label for="Billing Limit" class=" control-label col-md-4 text-left"> Billing Limit </label>
+									<div class="col-md-6">
+									  <textarea name='billing_limit' rows='5' id='billing_limit' class='form-control '  
+				           >{{ $row['billing_limit'] }}</textarea> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
 									<label for="Pay Atten" class=" control-label col-md-4 text-left"> Pay Atten </label>
 									<div class="col-md-6">
 									  {!! Form::text('pay_atten', $row['pay_atten'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
@@ -141,18 +161,18 @@
 						<fieldset><legend> .</legend>
 									
 								  <div class="form-group  " >
-									<label for="Contact Phone" class=" control-label col-md-4 text-left"> Contact Phone </label>
+									<label for="Contact Email" class=" control-label col-md-4 text-left"> Contact Email </label>
 									<div class="col-md-6">
-									  {!! Form::text('contact_phone', $row['contact_phone'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									  {!! Form::text('contact_email', $row['contact_email'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
 									 </div> 
 									 <div class="col-md-2">
 									 	
 									 </div>
 								  </div> 					
 								  <div class="form-group  " >
-									<label for="Contact Email" class=" control-label col-md-4 text-left"> Contact Email </label>
+									<label for="Contact Phone" class=" control-label col-md-4 text-left"> Contact Phone </label>
 									<div class="col-md-6">
-									  {!! Form::text('contact_email', $row['contact_email'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									  {!! Form::text('contact_phone', $row['contact_phone'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
 									 </div> 
 									 <div class="col-md-2">
 									 	

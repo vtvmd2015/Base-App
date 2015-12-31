@@ -21,6 +21,14 @@
 		<li @if($active == 'sidebar') class="active" @endif><a href="{{ URL::to('sximo/menu?pos=sidebar')}}"><i class="icon-paragraph-justify2"></i> {{ Lang::get('core.tab_sidemenu') }}</a></li>	
 	</ul>  	
 	
+             {!! Form::open(array('url'=>'sximo/menu/saveorder/', 'class'=>'form-horizontal','files' => true)) !!}	
+			<input type="hidden" name="reorder" id="reorder" value="" />
+ <div class="infobox infobox-danger fade in">
+ <p> {{ Lang::get('core.t_tipsnote') }}	</p>
+</div>			
+		
+			<button type="submit" class="btn btn-primary ">  {{ Lang::get('core.sb_reorder') }} </button>	
+		 {!! Form::close() !!}	
 	
 		<div class="col-sm-5">
 
@@ -67,14 +75,7 @@
 			@endforeach			  
               </ol>
             </div>
-		 {!! Form::open(array('url'=>'sximo/menu/saveorder/', 'class'=>'form-horizontal','files' => true)) !!}	
-			<input type="hidden" name="reorder" id="reorder" value="" />
- <div class="infobox infobox-danger fade in">
- <p> {{ Lang::get('core.t_tipsnote') }}	</p>
-</div>			
 		
-			<button type="submit" class="btn btn-primary ">  {{ Lang::get('core.sb_reorder') }} </button>	
-		 {!! Form::close() !!}	
 		 </div>
 		</div>
 		<div class="col-sm-7">

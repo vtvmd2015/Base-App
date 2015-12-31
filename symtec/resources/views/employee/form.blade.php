@@ -28,13 +28,22 @@
 	<div class="sbox-content"> 	
 
 		 {!! Form::open(array('url'=>'employee/save?return='.$return, 'class'=>'form-horizontal','files' => true , 'parsley-validate'=>'','novalidate'=>' ')) !!}
-<div class="col-md-6">
+<div class="col-md-3">
 						<fieldset><legend> Employee</legend>
 									
 								  <div class="form-group hidethis " style="display:none;">
 									<label for="Employee Id" class=" control-label col-md-4 text-left"> Employee Id </label>
 									<div class="col-md-6">
 									  {!! Form::text('employee_id', $row['employee_id'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Employee Number" class=" control-label col-md-4 text-left"> Employee Number </label>
+									<div class="col-md-6">
+									  {!! Form::text('employee_number', $row['employee_number'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
 									 </div> 
 									 <div class="col-md-2">
 									 	
@@ -119,18 +128,9 @@
 								  </div> </fieldset>
 			</div>
 			
-			<div class="col-md-6">
+			<div class="col-md-3">
 						<fieldset><legend> Additional</legend>
 									
-								  <div class="form-group  " >
-									<label for="Nationality" class=" control-label col-md-4 text-left"> Nationality </label>
-									<div class="col-md-6">
-									  {!! Form::text('nationality', $row['nationality'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
-									 </div> 
-									 <div class="col-md-2">
-									 	
-									 </div>
-								  </div> 					
 								  <div class="form-group  " >
 									<label for="Marital Status" class=" control-label col-md-4 text-left"> Marital Status </label>
 									<div class="col-md-6">
@@ -150,9 +150,18 @@
 									 </div>
 								  </div> 					
 								  <div class="form-group  " >
-									<label for="Building Detail" class=" control-label col-md-4 text-left"> Building Detail </label>
+									<label for="Country" class=" control-label col-md-4 text-left"> Country </label>
 									<div class="col-md-6">
-									  {!! Form::text('building_detail', $row['building_detail'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									  {!! Form::text('country', $row['country'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Nationality" class=" control-label col-md-4 text-left"> Nationality </label>
+									<div class="col-md-6">
+									  {!! Form::text('nationality', $row['nationality'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
 									 </div> 
 									 <div class="col-md-2">
 									 	
@@ -186,6 +195,15 @@
 									 </div>
 								  </div> 					
 								  <div class="form-group  " >
+									<label for="Building Detail" class=" control-label col-md-4 text-left"> Building Detail </label>
+									<div class="col-md-6">
+									  {!! Form::text('building_detail', $row['building_detail'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
 									<label for="State" class=" control-label col-md-4 text-left"> State </label>
 									<div class="col-md-6">
 									  {!! Form::text('state', $row['state'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
@@ -193,11 +211,92 @@
 									 <div class="col-md-2">
 									 	
 									 </div>
+								  </div> </fieldset>
+			</div>
+			
+			<div class="col-md-3">
+						<fieldset><legend> .</legend>
+									
+								  <div class="form-group  " >
+									<label for="Pf No" class=" control-label col-md-4 text-left"> Pf No </label>
+									<div class="col-md-6">
+									  {!! Form::text('pf_no', $row['pf_no'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
 								  </div> 					
 								  <div class="form-group  " >
-									<label for="Country" class=" control-label col-md-4 text-left"> Country </label>
+									<label for="Pan No" class=" control-label col-md-4 text-left"> Pan No </label>
 									<div class="col-md-6">
-									  {!! Form::text('country', $row['country'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									  {!! Form::text('pan_no', $row['pan_no'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Date Of Joining" class=" control-label col-md-4 text-left"> Date Of Joining </label>
+									<div class="col-md-6">
+									  
+				<div class="input-group m-b" style="width:150px !important;">
+					{!! Form::text('date_of_joining', $row['date_of_joining'],array('class'=>'form-control date')) !!}
+					<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+				</div> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Date Of Releiving" class=" control-label col-md-4 text-left"> Date Of Releiving </label>
+									<div class="col-md-6">
+									  
+				<div class="input-group m-b" style="width:150px !important;">
+					{!! Form::text('date_of_releiving', $row['date_of_releiving'],array('class'=>'form-control date')) !!}
+					<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+				</div> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> </fieldset>
+			</div>
+			
+			<div class="col-md-3">
+						<fieldset><legend> .</legend>
+									
+								  <div class="form-group  " >
+									<label for="Bank Name" class=" control-label col-md-4 text-left"> Bank Name </label>
+									<div class="col-md-6">
+									  {!! Form::text('bank_name', $row['bank_name'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Bank Branch" class=" control-label col-md-4 text-left"> Bank Branch </label>
+									<div class="col-md-6">
+									  {!! Form::text('bank_branch', $row['bank_branch'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Bank Ifsc Code" class=" control-label col-md-4 text-left"> Bank Ifsc Code </label>
+									<div class="col-md-6">
+									  {!! Form::text('bank_ifsc_code', $row['bank_ifsc_code'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Bank Acc No" class=" control-label col-md-4 text-left"> Bank Acc No </label>
+									<div class="col-md-6">
+									  {!! Form::text('bank_acc_no', $row['bank_acc_no'],array('class'=>'form-control', 'placeholder'=>'',   )) !!} 
 									 </div> 
 									 <div class="col-md-2">
 									 	

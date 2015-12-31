@@ -12,4 +12,12 @@
                     Route::controller('supplier', 'SupplierController');
                     Route::controller('customerstypes', 'CustomerstypesController');
                     Route::controller('customers', 'CustomersController');
+                    Route::controller('paycompotypes', 'PaycompotypesController');
+                    Route::controller('paycompoassign', 'PaycompoassignController');
+                    Route::controller('salaryentry', 'SalaryentryController');
+                    Route::controller('holidays', 'HolidaysController');
+                    Route::controller('leaveentry', 'LeaveentryController');
+                    Route::controller('attendenceimport', 'AttendenceimportController');
+                    Route::controller('attendenceentry', 'AttendenceentryController');
+                    Route::controller('esireport', 'EsireportController');
                     ?>
